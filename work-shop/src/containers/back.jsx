@@ -41,6 +41,8 @@ class back extends Component {
                cookies.set('coins', respuesta.coins, {phat: "/"});
                cookies.set('password', respuesta.password, {phat: "/"});
                window.location.href="./home";
+               localStorage.setItem ("email", respuesta.email);
+               localStorage.setItem ("Clave", respuesta.password);
 
             }else{
                alert('ni escribir un usuario sabes que haces con tu vida? usuario o contraseña incorrectos')
