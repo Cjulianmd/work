@@ -3,7 +3,7 @@ import { TitleC, InputT1, InputP1, InputN, InputE, BtNext} from '../style/StyleG
 
 import axios from 'axios'
 
-const baseUrl = 'https://app-liveedu.herokuapp.com/Usuarios';
+const baseUrl = 'https://app-liveedu.herokuapp.com/Usuarios/';
 class create extends Component {
 
    state = {

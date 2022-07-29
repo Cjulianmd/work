@@ -40,7 +40,7 @@ class back extends Component {
                cookies.set('telefono', respuesta.telefono, {phat: "/"});
                cookies.set('coins', respuesta.coins, {phat: "/"});
                cookies.set('password', respuesta.password, {phat: "/"});
-               //window.location.href="./home";
+               window.location.href="./home";
 
             }else{
                alert('ni escribir un usuario sabes que haces con tu vida? usuario o contraseña incorrectos')
