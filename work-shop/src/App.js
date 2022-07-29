@@ -1,8 +1,9 @@
+import CrearPost from "./components/CrearPost";
 
 function App() {
   return (
     <>
-    <div>Hola</div>
+    <CrearPost/>
     </>
   );
 }
