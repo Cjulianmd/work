@@ -1,11 +1,12 @@
 import React from 'react';
-import Imagen from '../components/PerfilComponents/Imagen';
-
+import ImagenPortadaSugeridos from '../components/PerfilComponents/ImagenPortadaSugeridos';
+import Sugerido from '../components/PerfilComponents/Sugerido';
 
 const Perfil = () => {
     return (
         <div>
-            <Imagen />
+            <ImagenPortadaSugeridos />
+            <Sugerido />
         </div>
     );
 }

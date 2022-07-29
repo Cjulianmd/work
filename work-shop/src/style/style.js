@@ -79,3 +79,13 @@ export const ImgStyle = styled.img`
     border-radius: 10px;
     margin-top: 3px
 `
+
+export const ImgStyleSug = styled.img`
+    position: absolute;
+    top: 190px;
+    left: 160px
+`
+
+export const ImgS = styled.img`
+    display: flex;
+`

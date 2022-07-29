@@ -1,7 +1,7 @@
 import React from 'react';
 import portada from '../../img/portada.png';
 
-const Imagen = () => {
+const ImagenPortadaSugeridos = () => {
     return (
         <div>
             <img src={portada} alt="imagen de portada"/>
@@ -9,4 +9,4 @@ const Imagen = () => {
     );
 }
 
-export default Imagen;
+export default ImagenPortadaSugeridos;
