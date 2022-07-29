@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import {  InputT, InputP, Texts, BtNext} from '../style/StyleGlobal';
 import {NavLink} from 'react-router-dom'
-import Cookie from 'universal-cookie'
 import axios from 'axios'
-const cookies = new Cookie()
+import Cokkie  from 'universal-cookie';
+const cookies = new Cokkie()
 
 let baseUrl = 'https://app-liveedu.herokuapp.com/Usuarios/'
 //https://app.getpostman.com/join-team?invite_code=950e74ddfd453ab2408546f1b16676ec
