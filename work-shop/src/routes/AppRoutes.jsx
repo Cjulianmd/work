@@ -8,8 +8,7 @@ import Back from '../containers/back';
 import Registrer from '../containers/create'
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
-        <MenuApp />        
+        <BrowserRouter>      
             <Routes>
                 <Route path='/perfil' element={<Perfil/>}/>
                 <Route path='/home' element={<Home/>}/>
