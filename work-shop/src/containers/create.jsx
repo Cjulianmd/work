@@ -26,8 +26,6 @@ class create extends Component {
          email:this.state.form.email,
          telefono:this.state.form.telefono,
          password: this.state.form.password,
-         
-         coins:"0"
       }
          ) 
         .catch(error =>{
