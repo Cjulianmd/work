@@ -1,9 +1,11 @@
 import React from 'react';
+import Imagen from '../components/PerfilComponents/Imagen';
+
 
 const Perfil = () => {
     return (
         <div>
-            Perfil
+            <Imagen />
         </div>
     );
 }
