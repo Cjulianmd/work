@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { DivCardsIcons, DivCardsIcons2, DivCardsPost, DivPerfil, DivStyleCard, ImgStyle } from '../style/style';
 import post from '../img/post.png';
 import imagePost from '../img/postp.png'
+import axios from 'axios';
 
 const Cards = () => {
+
+    const url = 'https://app-liveedu.herokuapp.com/Usuarios';
+    const [info, setInfo] = useState();
+
+    console.log(info)
+
+    const getUsers = async() =>{
+        try{
+            const resp = await axios.get(url)
+            const data = await resp.data
+            setInfo(data)
+        } catch (err){
+            alert("Ups!, a ocurrido un problema")
+
+        }
+    }
+
+    useEffect(()=>{
+        getUsers()
+    },[])
+
+
+
     return (
         <DivCardsPost>
             <DivStyleCard>
