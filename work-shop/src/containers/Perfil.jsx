@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import MenuApp from '../components/MenuApp';
 
 const InfoPerfil = styled.div`
 display: flex;
@@ -63,6 +63,7 @@ gap: 1rem;
 const Perfil = () => {
     return (
         <div>
+            <MenuApp />
             <div>
                 <img src="https://res.cloudinary.com/academiageek/image/upload/v1659129679/workshop/Group_14_j6s6zp.png" alt="" />
             </div>
