@@ -30,6 +30,10 @@ const DivInput = styled.div`
     flex-direction:column;
     gap:0;`
 
+    const H1 = styled.h1`
+    font-size: 25px;
+    font-weight:600;`
+
 const CrearPost = () => {
 
     const {data, handleChange} = useForm({
