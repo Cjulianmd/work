@@ -1,16 +1,15 @@
 
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MenuApp from '../components/MenuApp';
 import Home from '../containers/Home';
 import Perfil from '../containers/Perfil';
 import Back from '../containers/back';
 import Registrer from '../containers/create'
 import CrearPost from '../components/CrearPost'
+
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
-        <MenuApp />        
+        <BrowserRouter>       
             <Routes>
                 <Route path='createPost' element={<CrearPost/>} />
                 <Route path='/perfil' element={<Perfil/>}/>

@@ -3,17 +3,19 @@ import { DivCardsIcons, DivCardsIcons2, DivCardsPost, DivPerfil, DivStyleCard, I
 import post from '../img/post.png';
 import imagePost from '../img/postp.png'
 import axios from 'axios';
-
+import Cokkie  from 'universal-cookie';
+const cookies = new Cokkie()
+let id = cookies.get('id-3');
 const Cards = () => {
 
-    const url = 'https://app-liveedu.herokuapp.com/Usuarios';
+    const url = 'https://app-liveedu.herokuapp.com/Usuarios/';
     const [info, setInfo] = useState();
 
     console.log(info)
 
     const getUsers = async() =>{
         try{
-            const resp = await axios.get(url)
+            const resp = await axios.get(url + id)
             const data = await resp.data
             setInfo(data)
         } catch (err){
