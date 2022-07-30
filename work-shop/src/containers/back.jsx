@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {  InputT, InputP, Texts, BtNext} from '../style/StyleGlobal';
+import {  InputT, InputP, Texts, BtNext, TexBT} from '../style/style';
 import {NavLink} from 'react-router-dom'
 import axios from 'axios'
 import Cokkie  from 'universal-cookie';
@@ -33,15 +33,12 @@ class back extends Component {
          })
          .then(response=>{
             if(response.length>0){
+               
                console.log("einiciaste seccion")
                let respuesta = response[0];
-               cookies.set('nombre', respuesta.nombre, {phat: "/"});
-               cookies.set('email', respuesta.email, {phat: "/"});
-               cookies.set('telefono', respuesta.telefono, {phat: "/"});
-               cookies.set('coins', respuesta.coins, {phat: "/"});
-               cookies.set('password', respuesta.password, {phat: "/"});
-               //window.location.href="./home";
-
+               cookies.set('id-3', respuesta.id, {phat: "/"});
+               window.location.href="./home";
+               
             }else{
                alert('ni escribir un usuario sabes que haces con tu vida? usuario o contraseña incorrectos')
                window.location.href="./Singin";
@@ -63,10 +60,10 @@ class back extends Component {
          </form>
          
             <NavLink to="/" >
-            <BtNext onClick={()=> this.iniciarsesion() }></BtNext>
+            <BtNext onClick={()=> this.iniciarsesion() }><TexBT>iniciarsesion</TexBT></BtNext>
             </NavLink>
          <NavLink  to="/registrer" >
-            <Texts >Sign up</Texts> 
+         <Texts >¿no tienes cuenta? da clik aqui </Texts> 
          </NavLink>
          
          </React.StrictMode>
